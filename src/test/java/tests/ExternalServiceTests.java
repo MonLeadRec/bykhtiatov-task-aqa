@@ -38,6 +38,7 @@ class ExternalServiceTests extends BaseTest {
         Responses.assertError(r, 500, "Internal Server Error");
     }
 
+
     @Test
     @DisplayName("Если внешняя система отказала при входе, пользователь не считается активным")
     @Description("Проверяем, что сервис не записывает пользователя в активные, пока "
